@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CS420B_RestfulApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3d26ce6f31333b94358b6d8ddf396b537eb6e5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+897b788d76db2250a9485ca19bbd14dc22554abe")]
 [assembly: System.Reflection.AssemblyProductAttribute("CS420B_RestfulApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CS420B_RestfulApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
