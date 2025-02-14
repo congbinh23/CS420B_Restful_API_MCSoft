@@ -1,0 +1,6 @@
+@CS420B_RestfulApi_HostAddress = http://localhost:5047
+
+GET {{CS420B_RestfulApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

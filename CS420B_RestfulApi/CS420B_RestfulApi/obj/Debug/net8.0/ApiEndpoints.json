@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "CS420B_RestfulApi.Controllers.HotelBookingController",
+    "Method": "CreateEdit",
+    "RelativePath": "api/HotelBooking/CreateEdit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "booking",
+        "Type": "CS420B_RestfulApi.Models.HotelBooking_Info",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CS420B_RestfulApi.Controllers.HotelBookingController",
+    "Method": "Delete",
+    "RelativePath": "api/HotelBooking/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CS420B_RestfulApi.Controllers.HotelBookingController",
+    "Method": "Get",
+    "RelativePath": "api/HotelBooking/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CS420B_RestfulApi.Controllers.HotelBookingController",
+    "Method": "GetAll",
+    "RelativePath": "api/HotelBooking/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
