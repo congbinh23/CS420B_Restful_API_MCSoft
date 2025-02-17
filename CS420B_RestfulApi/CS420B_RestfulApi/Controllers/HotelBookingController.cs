@@ -70,5 +70,21 @@ namespace CS420B_RestfulApi.Controllers
 
             return new JsonResult(result);
         }
+
+        // Put
+        [HttpPut("{id}")]
+        public async Task<JsonResult> Update(Guid id, HotelBooking_Info Customer_Info) {
+
+            var old_Info = await _context.Bookings.FindAsync(id);
+            if (old_Info == null) {
+                return new JsonResult(BadRequest());
+            }
+            
+            old_Info.RoomNumber = Customer_Info.RoomNumber;
+            old_Info.ClientName = Customer_Info.ClientName;
+            await _context.SaveChangesAsync();
+
+            return new JsonResult(Ok());
+        }
     }
 }

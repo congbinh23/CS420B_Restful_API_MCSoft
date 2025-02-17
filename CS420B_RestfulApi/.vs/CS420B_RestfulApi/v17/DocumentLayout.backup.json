@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|e:\\cs420\\cs420b_restful_api_mcsoft\\cs420b_restfulapi\\cs420b_restfulapi\\controllers\\hotelbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|solutionrelative:cs420b_restfulapi\\controllers\\hotelbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|e:\\cs420\\cs420b_restful_api_mcsoft\\cs420b_restfulapi\\cs420b_restfulapi\\migrations\\20250214115244_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|solutionrelative:cs420b_restfulapi\\migrations\\20250214115244_dbinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|e:\\cs420\\cs420b_restful_api_mcsoft\\cs420b_restfulapi\\cs420b_restfulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|solutionrelative:cs420b_restfulapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|solutionrelative:cs420b_restfulapi\\data\\apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|e:\\cs420\\cs420b_restful_api_mcsoft\\cs420b_restfulapi\\cs420b_restfulapi\\controllers\\hotelbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|solutionrelative:cs420b_restfulapi\\controllers\\hotelbookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|e:\\cs420\\cs420b_restful_api_mcsoft\\cs420b_restfulapi\\cs420b_restfulapi\\models\\hotelbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|solutionrelative:cs420b_restfulapi\\models\\hotelbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|e:\\cs420\\cs420b_restful_api_mcsoft\\cs420b_restfulapi\\cs420b_restfulapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8A656FE5-EC77-4621-82FF-C1A6E79CD4F0}|CS420B_RestfulApi\\CS420B_RestfulApi.csproj|solutionrelative:cs420b_restfulapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Program.cs",
               "RelativeDocumentMoniker": "CS420B_RestfulApi\\Program.cs",
               "ToolTip": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Program.cs",
               "RelativeToolTip": "CS420B_RestfulApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T07:38:27.275Z",
               "IsPinned": true,
@@ -48,33 +48,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\appsettings.json",
-              "RelativeDocumentMoniker": "CS420B_RestfulApi\\appsettings.json",
-              "ToolTip": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\appsettings.json",
-              "RelativeToolTip": "CS420B_RestfulApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-14T00:32:56.894Z",
+              "DocumentIndex": 1,
+              "Title": "20250214115244_DbInit.cs",
+              "DocumentMoniker": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Migrations\\20250214115244_DbInit.cs",
+              "RelativeDocumentMoniker": "CS420B_RestfulApi\\Migrations\\20250214115244_DbInit.cs",
+              "ToolTip": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Migrations\\20250214115244_DbInit.cs",
+              "RelativeToolTip": "CS420B_RestfulApi\\Migrations\\20250214115244_DbInit.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T12:29:27.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HotelBookingController.cs",
               "DocumentMoniker": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Controllers\\HotelBookingController.cs",
               "RelativeDocumentMoniker": "CS420B_RestfulApi\\Controllers\\HotelBookingController.cs",
               "ToolTip": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Controllers\\HotelBookingController.cs",
               "RelativeToolTip": "CS420B_RestfulApi\\Controllers\\HotelBookingController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAwAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T14:44:16.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ApiContext.cs",
               "DocumentMoniker": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Data\\ApiContext.cs",
               "RelativeDocumentMoniker": "CS420B_RestfulApi\\Data\\ApiContext.cs",
@@ -87,13 +87,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HotelBooking.cs",
               "DocumentMoniker": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Models\\HotelBooking.cs",
               "RelativeDocumentMoniker": "CS420B_RestfulApi\\Models\\HotelBooking.cs",
               "ToolTip": "E:\\CS420\\CS420B_Restful_API_MCSoft\\CS420B_RestfulApi\\CS420B_RestfulApi\\Models\\HotelBooking.cs",
               "RelativeToolTip": "CS420B_RestfulApi\\Models\\HotelBooking.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T14:11:58.723Z",
               "EditorCaption": ""
