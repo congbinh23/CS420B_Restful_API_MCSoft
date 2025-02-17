@@ -13,7 +13,7 @@ namespace CS420B_RestfulApi.Models
     public class HotelBooking_Info 
     {
         [Required]
-        [Range(0, int.MaxValue)]
+        [Range(1, 100)]
         public int RoomNumber { get; set; }
         [MaxLength(100)]
         public string ClientName { get; set; }
