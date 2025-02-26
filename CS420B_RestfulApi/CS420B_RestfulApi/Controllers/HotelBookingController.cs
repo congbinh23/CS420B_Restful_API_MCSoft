@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using CS420B_RestfulApi.Models;
 using CS420B_RestfulApi.Data;
+using CS420B_RestfulApi.Models.Table;
+using CS420B_RestfulApi.Repository.IRepository;
+using CS420B_RestfulApi.Repository.VM;
+using CS420B_RestfulApi.Models.InputModule;
 
 
 namespace CS420B_RestfulApi.Controllers
@@ -10,81 +13,91 @@ namespace CS420B_RestfulApi.Controllers
     [ApiController]
     public class HotelBookingController : ControllerBase
     {
-        private readonly ApiContext _context;
+        private readonly IBooking _context;
 
-        public HotelBookingController(ApiContext context)
+        public HotelBookingController(IBooking context)
         {
             _context = context;
         }
 
-        // Create/edit
-        [HttpPost]
-        public JsonResult CreateEdit(HotelBooking_Info booking)
-        {
-            var hotelbook = new HotelBooking
-            {
-                Id = Guid.NewGuid(),
-                RoomNumber = booking.RoomNumber,
-                ClientName = booking.ClientName,
-            };
-
-            _context.Bookings.Add(hotelbook);
-            _context.SaveChanges();
-
-            return new JsonResult(Ok());
-        }
-
         //Get
         [HttpGet]
-        public JsonResult Get(Guid id) {
-            var result = _context.Bookings.Find(id);
-
-            if (result == null) {
-                return new JsonResult(NotFound());
+        public JsonResult GetAll() {
+            try
+            {
+                return new JsonResult(Ok(_context.GetAll()));
             }
-
-            return new JsonResult(Ok(result));
+            catch
+            {
+                return new JsonResult(BadRequest());
+            }
         }
 
-        // Delete
-        [HttpDelete]
-        public JsonResult Delete(Guid id) {
+        [HttpGet("{id}")]
+        public JsonResult GetById(Guid id)
+        {
+            try
+            {
+                var data = _context.GetById(id);
+                if (data != null)
+                {
+                    return new JsonResult(Ok());
+                }
+                else { return new JsonResult(NotFound()); }
+            }
+            catch
+            {
+                return new JsonResult(BadRequest());
+            }
+        }
 
-            var result = _context.Bookings.Find(id);
+        //Create
+        [HttpPost]
+        public JsonResult Create(BookingModule bookingModule)
+        {
+            try
+            {
+                return new JsonResult(Ok(_context.Add(bookingModule)));
+            }
+            catch
+            {
+                return new JsonResult(BadRequest());
+            }
+        }
 
-            if (result == null)
+        //Delete
+        [HttpDelete("{id}")]
+        public JsonResult Delete(Guid id)
+        {
+            try
+            {
+                _context.Delete(id);
+                return new JsonResult(Ok());
+            }
+            catch
+            {
+                return new JsonResult(BadRequest());
+            }
+        }
+
+        //Update
+        [HttpPut("{id}")]
+        public JsonResult Update(Guid id, BookingVM booking)
+        {
+            if (id != booking.BookingID)
             {
                 return new JsonResult(NotFound());
             }
-            _context.Bookings.Remove(result);
-            _context.SaveChanges();
+            try
+            {
+                _context.Update(booking);
+                return new JsonResult(Ok());
 
-            return new JsonResult(NoContent());
-        }
-
-
-        // Get all
-        [HttpGet()]
-        public JsonResult GetAll() {
-            var result = _context.Bookings.ToList();
-
-            return new JsonResult(result);
-        }
-
-        // Put
-        [HttpPut("{id}")]
-        public async Task<JsonResult> Update(Guid id, HotelBooking_Info Customer_Info) {
-
-            var old_Info = await _context.Bookings.FindAsync(id);
-            if (old_Info == null) {
+            }
+            catch
+            {
                 return new JsonResult(BadRequest());
             }
-            
-            old_Info.RoomNumber = Customer_Info.RoomNumber;
-            old_Info.ClientName = Customer_Info.ClientName;
-            await _context.SaveChangesAsync();
-
-            return new JsonResult(Ok());
         }
     }
 }
