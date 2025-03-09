@@ -41,7 +41,7 @@ namespace CS420B_RestfulApi.Controllers
                 var data = _context.GetById(id);
                 if (data != null)
                 {
-                    return new JsonResult(Ok());
+                    return new JsonResult(Ok(data));
                 }
                 else { return new JsonResult(NotFound()); }
             }
@@ -82,12 +82,8 @@ namespace CS420B_RestfulApi.Controllers
 
         //Update
         [HttpPut("{id}")]
-        public JsonResult Update(Guid id, BookingVM booking)
+        public JsonResult Update(BookingVM booking)
         {
-            if (id != booking.BookingID)
-            {
-                return new JsonResult(NotFound());
-            }
             try
             {
                 _context.Update(booking);

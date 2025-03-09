@@ -66,13 +66,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "guestVM",
+        "Type": "CS420B_RestfulApi.Repository.VM.GuestVM",
         "IsRequired": true
       },
       {
-        "Name": "guestVM",
-        "Type": "CS420B_RestfulApi.Repository.VM.GuestVM",
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -145,13 +145,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "hotelVM",
+        "Type": "CS420B_RestfulApi.Repository.VM.HotelVM",
         "IsRequired": true
       },
       {
-        "Name": "hotelVM",
-        "Type": "CS420B_RestfulApi.Repository.VM.HotelVM",
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -224,13 +224,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "booking",
+        "Type": "CS420B_RestfulApi.Repository.VM.BookingVM",
         "IsRequired": true
       },
       {
-        "Name": "booking",
-        "Type": "CS420B_RestfulApi.Repository.VM.BookingVM",
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -303,13 +303,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "paymentVM",
+        "Type": "CS420B_RestfulApi.Repository.VM.PaymentVM",
         "IsRequired": true
       },
       {
-        "Name": "paymentVM",
-        "Type": "CS420B_RestfulApi.Repository.VM.PaymentVM",
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -381,11 +381,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
       {
         "Name": "roomVM",
         "Type": "CS420B_RestfulApi.Repository.VM.RoomVM",
@@ -466,13 +461,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "roomTypeVM",
+        "Type": "CS420B_RestfulApi.Repository.VM.RoomTypeVM",
         "IsRequired": true
       },
       {
-        "Name": "roomTypeVM",
-        "Type": "CS420B_RestfulApi.Repository.VM.RoomTypeVM",
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],
@@ -545,13 +540,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "staffVM",
+        "Type": "CS420B_RestfulApi.Repository.VM.StaffVM",
         "IsRequired": true
       },
       {
-        "Name": "staffVM",
-        "Type": "CS420B_RestfulApi.Repository.VM.StaffVM",
+        "Name": "id",
+        "Type": "",
         "IsRequired": true
       }
     ],

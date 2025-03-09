@@ -15,9 +15,7 @@ namespace CS420B_RestfulApi.Models.Table
         public DateTime DateOfBirth { get; set; }
         [MaxLength(255)]
         public string Address { get; set; }
-        [MaxLength(10)]
         public string Phone { get; set; }
-        [MaxLength(255)]
         public string Email { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }
     }

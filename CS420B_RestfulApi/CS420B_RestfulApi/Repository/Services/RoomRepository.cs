@@ -4,6 +4,7 @@ using CS420B_RestfulApi.Models.InputModule;
 using CS420B_RestfulApi.Models.Table;
 using CS420B_RestfulApi.Repository.IRepository;
 using CS420B_RestfulApi.Repository.VM;
+using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace CS420B_RestfulApi.Repository.Services
@@ -21,7 +22,7 @@ namespace CS420B_RestfulApi.Repository.Services
                 RoomNumber = opt.RoomNumber,
                 HotelID = opt.HotelID ?? 0,
                 TypeID = opt.TypeID ?? 0,
-                status = (Status)opt.status,
+                status = opt.status,
             });
             return rooms.ToList();
         }
@@ -34,7 +35,7 @@ namespace CS420B_RestfulApi.Repository.Services
                     RoomNumber = rooms.RoomNumber,
                     HotelID = rooms.HotelID ?? 0,
                     TypeID = rooms.TypeID ?? 0,
-                    status = (Status)rooms.status,
+                    status = rooms.status,
                 };
             }
             return null;
@@ -46,7 +47,7 @@ namespace CS420B_RestfulApi.Repository.Services
             {
                 HotelID = roomModule.HotelID,
                 TypeID = roomModule.TypeID,
-                status = (Status)roomModule.status,
+                status = roomModule.status,
             };
             _context.Rooms.Add(rooms);
             _context.SaveChanges();
@@ -56,7 +57,7 @@ namespace CS420B_RestfulApi.Repository.Services
                 RoomNumber = rooms.RoomNumber,
                 HotelID = rooms.HotelID ?? 0,
                 TypeID = rooms.TypeID ?? 0,
-                status = (Status)rooms.status,
+                status = rooms.status,
             };
         }
 
@@ -79,9 +80,10 @@ namespace CS420B_RestfulApi.Repository.Services
                 rooms.RoomNumber = roomVM.RoomNumber;
                 rooms.HotelID = roomVM.HotelID;
                 rooms.TypeID = roomVM.TypeID;
-                rooms.status = (Status)roomVM.status;
+                rooms.status = roomVM.status;
                 _context.SaveChanges();
             }
+            
         }
     }
 }

@@ -10,6 +10,6 @@ namespace CS420B_RestfulApi.Models.InputModule
         public int HotelID { get; set; }
         public int TypeID { get; set; }
         [MaxLength(20)]
-        public int status { get; set; }
+        public string status { get; set; }
     }
 }

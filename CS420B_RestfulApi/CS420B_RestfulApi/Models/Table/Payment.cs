@@ -3,10 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CS420B_RestfulApi.Models.Table
 {
-    public enum PaymentMethod
-    {
-        CreditCard = 1, Electronic = 2, EWallet = 3, Cash = 4
-    }
+
 
     [Table("Payment")]
     public class Payment
@@ -21,6 +18,6 @@ namespace CS420B_RestfulApi.Models.Table
         public decimal Amount { get; set; }
         public DateTime PaymentDate { get; set; }
         [MaxLength(50)]
-        public PaymentMethod PaymentMethod { get; set; }
+        public string PaymentMethod { get; set; }
     }
 }

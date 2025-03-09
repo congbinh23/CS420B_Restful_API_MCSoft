@@ -20,7 +20,7 @@ namespace CS420B_RestfulApi.Repository.Services
                 BookingID = (Guid)opt.BookingID,
                 Amount = opt.Amount,
                 PaymentDate = opt.PaymentDate,
-                PaymentMethod = (PaymentMethod)opt.PaymentMethod,
+                PaymentMethod = opt.PaymentMethod,
             });
             return payments.ToList();
         }
@@ -36,7 +36,7 @@ namespace CS420B_RestfulApi.Repository.Services
                     BookingID = (Guid)payments.BookingID,
                     Amount = payments.Amount,
                     PaymentDate = payments.PaymentDate,
-                    PaymentMethod = (PaymentMethod)payments.PaymentMethod,
+                    PaymentMethod = payments.PaymentMethod,
                 };
             }
             return null;
@@ -49,7 +49,7 @@ namespace CS420B_RestfulApi.Repository.Services
                 BookingID = paymentModule.BookingID,
                 Amount = paymentModule.Amount,
                 PaymentDate = paymentModule.PaymentDate,
-                PaymentMethod = (PaymentMethod)paymentModule.PaymentMethod,
+                PaymentMethod = paymentModule.PaymentMethod,
             };
 
             _context.Payments.Add(payments);
@@ -61,7 +61,7 @@ namespace CS420B_RestfulApi.Repository.Services
                 BookingID = (Guid)payments.BookingID,
                 Amount = payments.Amount,
                 PaymentDate = payments.PaymentDate,
-                PaymentMethod = (PaymentMethod)payments.PaymentMethod,
+                PaymentMethod = payments.PaymentMethod,
             };
         }
 
@@ -84,7 +84,7 @@ namespace CS420B_RestfulApi.Repository.Services
                 payments.BookingID = paymentVM.BookingID;
                 payments.Amount = paymentVM.Amount;
                 payments.PaymentDate = paymentVM.PaymentDate;
-                payments.PaymentMethod = (PaymentMethod)paymentVM.PaymentMethod;
+                payments.PaymentMethod = paymentVM.PaymentMethod;
                 _context.SaveChanges();
             }
         }

@@ -9,6 +9,6 @@ namespace CS420B_RestfulApi.Repository.VM
         public int RoomNumber { get; set; }
         public int HotelID { get; set; }
         public int TypeID { get; set; }
-        public Status status { get; set; }
+        public string status { get; set; }
     }
 }

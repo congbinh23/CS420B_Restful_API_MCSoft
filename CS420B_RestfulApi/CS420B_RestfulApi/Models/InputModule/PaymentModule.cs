@@ -10,6 +10,6 @@ namespace CS420B_RestfulApi.Models.InputModule
         public decimal Amount { get; set; }
         public DateTime PaymentDate { get; set; }
         [MaxLength(50)]
-        public int PaymentMethod { get; set; }
+        public string PaymentMethod { get; set; }
     }
 }

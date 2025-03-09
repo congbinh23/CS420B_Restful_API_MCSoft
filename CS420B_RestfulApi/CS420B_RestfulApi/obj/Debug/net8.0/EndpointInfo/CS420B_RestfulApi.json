@@ -105,8 +105,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -236,8 +235,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -367,8 +365,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -492,8 +489,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -618,14 +614,6 @@
           "Room"
         ],
         "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
           {
             "name": "RoomNumber",
             "in": "path",
@@ -761,8 +749,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -892,8 +879,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -1005,17 +991,14 @@
             "format": "date-time"
           },
           "address": {
-            "maxLength": 255,
             "type": "string",
             "nullable": true
           },
           "phone": {
-            "maxLength": 10,
             "type": "string",
             "nullable": true
           },
           "email": {
-            "maxLength": 255,
             "type": "string",
             "nullable": true
           }
@@ -1076,7 +1059,6 @@
             "nullable": true
           },
           "number": {
-            "maxLength": 10,
             "type": "string",
             "nullable": true
           },
@@ -1135,16 +1117,6 @@
         },
         "additionalProperties": false
       },
-      "PaymentMethod": {
-        "enum": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
       "PaymentModule": {
         "required": [
           "bookingID"
@@ -1165,8 +1137,8 @@
           },
           "paymentMethod": {
             "maxLength": 50,
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1191,7 +1163,8 @@
             "format": "date-time"
           },
           "paymentMethod": {
-            "$ref": "#/components/schemas/PaymentMethod"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1212,8 +1185,8 @@
           },
           "status": {
             "maxLength": 20,
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1284,7 +1257,8 @@
             "format": "int32"
           },
           "status": {
-            "$ref": "#/components/schemas/Status"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1297,7 +1271,6 @@
             "format": "int32"
           },
           "firstName": {
-            "maxLength": 50,
             "type": "string",
             "nullable": true
           },
@@ -1318,12 +1291,10 @@
             "format": "date-time"
           },
           "phone": {
-            "maxLength": 10,
             "type": "string",
             "nullable": true
           },
           "email": {
-            "maxLength": 255,
             "type": "string",
             "nullable": true
           },
@@ -1379,17 +1350,6 @@
           }
         },
         "additionalProperties": false
-      },
-      "Status": {
-        "enum": [
-          0,
-          1,
-          2,
-          3,
-          -1
-        ],
-        "type": "integer",
-        "format": "int32"
       }
     }
   }

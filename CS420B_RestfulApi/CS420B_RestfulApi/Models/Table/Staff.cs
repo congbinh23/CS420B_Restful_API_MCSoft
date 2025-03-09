@@ -19,9 +19,8 @@ namespace CS420B_RestfulApi.Models.Table
         [Column(TypeName = "decimal(10,2)")]
         public decimal Salary { get; set; }
         public DateTime DateOfBirth { get; set; }
-        [MaxLength(10)]
-        public string Phone { get; set; }
         [MaxLength(255)]
+        public string Phone { get; set; }
         public string Email { get; set; }
         public DateTime HireDate { get; set; }
 
